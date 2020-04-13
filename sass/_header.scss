@@ -1,0 +1,14 @@
+.header__flex{
+     display: flex;
+     justify-content: space-between;
+     height: 40px;
+     width: 90%;
+     margin: 0 auto;
+     .enlace{
+          text-transform: capitalize;
+          display: flex;
+          align-items: center;
+          color: $color_primario;
+          font-size: 24px;
+     }
+}

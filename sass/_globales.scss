@@ -1,0 +1,40 @@
+$fuente1: 'Open Sans',
+sans-serif;
+$fuente2: 'Source Sans Pro',
+sans-serif;
+$color_primario: black;
+$color_primario2: #0097a7;
+$color_secundario: #ffc107;
+$color_secundario2: #808080;
+$color_claro: white;
+$color_variado:#E6DADA;
+
+@mixin margin_bottom {
+     margin-bottom: 30px;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: $fuente2;
+}
+
+a {
+     text-decoration: none;
+}
+
+.boton {
+     padding: 10px 50px;
+     display: inline-block;
+     font-family: $fuente1;
+}
+
+.boton_azul {
+     color: white;
+     text-transform: uppercase;
+     background-color: $color_primario2;
+}

@@ -1,0 +1,40 @@
+.servicios {
+     display: flex;
+     justify-content: space-between;
+
+     .cajaServicio {
+          padding: 15px 10px;
+          text-align: center;
+          @include tamaño_flex_Caja(33.3%, 10px);
+
+          h3 {
+               font-family: $fuente2;
+               font-size: 30px;
+               color: $color_primario2;
+               margin-bottom: 15px;
+          }
+
+          .iconos {
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
+               width: 100px;
+               height: 100px;
+               margin: 0 auto 10px auto;
+               border-radius: 50%;
+               -webkit-border-radius: 50%;
+               -moz-border-radius: 50%;
+               -ms-border-radius: 50%;
+               -o-border-radius: 50%;
+               background-color: $color_secundario;
+
+               i {
+                    font-size: 40px;
+               }
+          }
+
+          p {
+               line-height: 2;
+          }
+     }
+}

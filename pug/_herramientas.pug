@@ -1,1 +1,15 @@
 -var enlaces = ['inicio', 'nosotros', 'clientes', 'contactos']
+mixin servicio (titulo, icono1, icono2, informacion)
+     if(icono2)
+          .cajaServicio
+               h3=titulo
+               .iconos
+                    i(class=""+icono1)
+                    i(class=""+icono2)
+               p=informacion
+     else
+          .cajaServicio
+               h3=titulo
+               .iconos
+                    i(class=""+icono1)
+               p=informacion

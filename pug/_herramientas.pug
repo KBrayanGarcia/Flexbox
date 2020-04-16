@@ -13,3 +13,20 @@ mixin servicio (titulo, icono1, icono2, informacion)
                .iconos
                     i(class=""+icono1)
                p=informacion
+mixin cajaCampo(tipo, label, id, placeholder)
+     if(tipo == 'text')
+          .campo
+               label(for=""+id )=label + ":"
+               input(type=""+tipo id=""+id placeholder=""+placeholder)
+     else if(tipo == 'email')
+          .campo
+               label(for=""+id )=label + ":"
+               input(type=""+tipo id=""+id placeholder=""+placeholder)
+     else if(tipo == 'textarea')
+          .campo
+               label(for=""+id )=label + ":"
+               textarea(id=""+id)
+     else if(tipo == 'submit')
+          .campo
+               input(type=""+tipo value=""+id class="boton boton_azul")
+               

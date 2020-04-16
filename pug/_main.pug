@@ -1,10 +1,8 @@
 main
      section.contenedor_servicios
           h2 Nuestros Servicios
-          .servicios
-               +servicio('Diseño Web', "fas fa-pen-fancy","", 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse doloremque enim earum blanditiis consequatur alias consectetur minus ut corrupti.')
-               +servicio('Aplicaciones Moviles', "fab fa-android","fab fa-apple", 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse doloremque enim earum blanditiis consequatur alias consectetur minus ut corrupti.')
-               +servicio('Social media', "fab fa-twitter", "fab fa-facebook-square", 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse doloremque enim earum blanditiis consequatur alias consectetur minus ut corrupti.')
+          include _servicios.pug
      section.contenedor_contacto
           h2 Contacto
-          .contacto
+          include _formulario.pug
+               

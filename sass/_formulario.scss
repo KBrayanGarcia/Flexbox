@@ -1,0 +1,57 @@
+.contacto {
+     padding: 40px 20px;
+     background-color: $color_secundario2;
+     margin: 0 auto;
+     width: 100%;
+     max-width: 800px;
+     border-radius:15px;
+     -webkit-border-radius:15px;
+     -moz-border-radius:15px;
+     -ms-border-radius:15px;
+     -o-border-radius:15px;
+     h3{
+          text-align: center;
+          font-family: $fuente2;
+          color: $color_secundario;
+          margin-bottom: 20px;
+     }
+     .campo{
+          display: flex;
+          align-items: center;
+          margin: 20px 0;
+          label{
+               font-size: 20px;
+               width: 100px;
+               color: $color_claro;
+          }
+          input, textarea{
+               font-size: 16px;
+               height: 40px;
+               flex: 1;
+          }
+          textarea{
+               height: 80px;
+          }
+          input[type="submit"]{
+               flex: 0;
+               cursor: pointer;
+               border: none;
+          }
+     }
+     .campos_principales{
+          display: flex;
+          justify-content: space-between;
+          .campo{
+               margin: 0;
+               @include tamaño_flex_Caja(50%, 10px);
+          }
+     }
+     .contenedor_enviar{
+          display: flex;
+          justify-content: flex-end;
+          .campo{
+               margin: 0;
+          }
+     }
+}
+     

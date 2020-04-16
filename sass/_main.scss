@@ -12,6 +12,15 @@ main {
                font-weight: 700;
           }
      }
+
+     .contenedor_contacto {
+          h2 {
+               font-family: $fuente1;
+               font-weight: 700;
+               text-align: center;
+          }
+     }
 }
 
 @import "servicios.scss";
+@import "formulario.scss";

@@ -1,0 +1,10 @@
+.contacto
+     h3 Contactanos llenando todos los campos
+     form(action="#")
+          .campos_principales
+               +cajaCampo('text', 'Nombre', 'nombre', 'Tu nombre')
+               +cajaCampo('text', 'Telefono', 'telefono', 'Tu telefono')
+          +cajaCampo('email', 'Correo', 'correo', 'Tu correo electronico')
+          +cajaCampo('textarea','Mensaje','mensaje', '')
+          .contenedor_enviar
+               +cajaCampo('submit','','Enviar', '')

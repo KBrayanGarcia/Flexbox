@@ -111,6 +111,11 @@ main .contenedor_servicios h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
+main .contenedor_contacto h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
 
 .servicios {
   display: flex;
@@ -145,5 +150,65 @@ main .contenedor_servicios h2 {
   font-size: 40px;
 }
 .servicios .cajaServicio p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 2;
+}
+
+.contacto {
+  padding: 40px 20px;
+  background-color: #808080;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.contacto h3 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffc107;
+  margin-bottom: 20px;
+}
+.contacto .campo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.contacto .campo label {
+  font-size: 20px;
+  width: 100px;
+  color: white;
+}
+.contacto .campo input, .contacto .campo textarea {
+  font-size: 16px;
+  height: 40px;
+  flex: 1;
+}
+.contacto .campo textarea {
+  height: 80px;
+}
+.contacto .campo input[type=submit] {
+  flex: 0;
+  cursor: pointer;
+  border: none;
+}
+.contacto .campos_principales {
+  display: flex;
+  justify-content: space-between;
+}
+.contacto .campos_principales .campo {
+  margin: 0;
+  flex: 0 0 calc(50% - 10px);
+}
+.contacto .contenedor_enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+.contacto .contenedor_enviar .campo {
+  margin: 0;
 }

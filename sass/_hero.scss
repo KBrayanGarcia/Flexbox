@@ -1,6 +1,6 @@
 .hero {
      background-image: url('../img/hero.jpg');
-     height: 450px;
+     height: 28.125rem;
      display: flex;
      position: relative;
      justify-content: center;
@@ -18,12 +18,12 @@
           }
 
           span {
-               font-size: 22px;
+               font-size: 1.375rem;
                color: $color_variado;
           }
 
           .boton {
-               font-size: 22px;
+               font-size: 1.375rem;
                border-radius: 5px;
                -webkit-border-radius: 5px;
                -moz-border-radius: 5px;
@@ -48,6 +48,6 @@
 
      .icono-ubicacion {
           color: $color_secundario;
-          font-size: 50px;
+          font-size: 3.125rem;
      }
 }

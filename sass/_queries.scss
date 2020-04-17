@@ -1,0 +1,22 @@
+@mixin media($dispositivo){
+     @if $dispositivo == 'movil-s' {  
+          @media only screen and (max-width: 575.98px) { @content; }  
+        }
+     @else if $dispositivo == 'movil-l' {  
+          @media only screen and (min-width: 575.99px) and (max-width: 767.98px) { @content; }  
+        }
+     @else if $dispositivo == 'tablet' {  
+          @media only screen and (min-width: 767.99px) and (max-width: 991.98px) { @content; }  
+        }
+     @else if $dispositivo == 'desktop-l' {  
+          @media only screen and (max-width: 1199.98px) { @content; }  
+        }
+        /*globales  */
+        @else if $dispositivo == 'movil' {  
+          @media only screen and (max-width: 767.99px) { @content; }  
+        }
+        @else if $dispositivo == 'desktop' {  
+          @media only screen and (min-width: 575.99px) { @content; }  
+        }
+}
+     

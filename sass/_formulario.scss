@@ -1,14 +1,14 @@
 .contacto {
-     padding: 40px 20px;
+     padding: 2.5rem 1.25rem;
      background-color: $color_secundario2;
      margin: 0 auto;
      width: 100%;
-     max-width: 800px;
-     border-radius:15px;
-     -webkit-border-radius:15px;
-     -moz-border-radius:15px;
-     -ms-border-radius:15px;
-     -o-border-radius:15px;
+     max-width: 50rem;
+     border-radius:0.9375rem;
+     -webkit-border-radius:0.9375rem;
+     -moz-border-radius:0.9375rem;
+     -ms-border-radius:0.9375rem;
+     -o-border-radius:0.9375rem;
      h3{
           text-align: center;
           font-family: $fuente2;
@@ -20,17 +20,22 @@
           align-items: center;
           margin: 20px 0;
           label{
-               font-size: 20px;
-               width: 100px;
+               font-size: 1.25rem;
+               width: 6.25rem;
                color: $color_claro;
+               
           }
           input, textarea{
-               font-size: 16px;
-               height: 40px;
+               font-size: 1rem;
+               height: 2.5rem;
                flex: 1;
+               @include media('movil-s'){
+                    flex: 1;
+                    width: 100%;
+               }
           }
           textarea{
-               height: 80px;
+               height: 5rem;
           }
           input[type="submit"]{
                flex: 0;
@@ -41,14 +46,24 @@
      .campos_principales{
           display: flex;
           justify-content: space-between;
+          @include media('movil'){
+               display: block;
+          }
           .campo{
                margin: 0;
+               @include media('movil'){
+                    margin:20px 0;
+               }
                @include tamaño_flex_Caja(50%, 10px);
           }
      }
      .contenedor_enviar{
           display: flex;
           justify-content: flex-end;
+          @include media('movil-s'){
+               justify-content: center;
+               max-width: 100%;
+          }
           .campo{
                margin: 0;
           }

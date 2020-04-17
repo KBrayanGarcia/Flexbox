@@ -4,8 +4,26 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+}
+@media only screen and (max-width: 575.98px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 991.98px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
-  font-size: 16px;
   font-family: "Source Sans Pro", sans-serif;
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
@@ -15,7 +33,7 @@ a {
 }
 
 .boton {
-  padding: 10px 50px;
+  padding: 0.625rem 3.125rem;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
 }
@@ -32,21 +50,34 @@ a {
 .header .header__flex {
   display: flex;
   justify-content: space-between;
-  height: 40px;
+  height: 2.5rem;
   width: 90%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 575.98px) {
+  .header .header__flex {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
 }
 .header .header__flex .enlace {
   text-transform: capitalize;
   display: flex;
   align-items: center;
   color: black;
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 575.98px) {
+  .header .header__flex .enlace {
+    padding: 8px;
+    justify-content: center;
+  }
 }
 
 .hero {
   background-image: url("../img/hero.jpg");
-  height: 450px;
+  height: 28.125rem;
   display: flex;
   position: relative;
   justify-content: center;
@@ -63,11 +94,11 @@ a {
   margin-bottom: 30px;
 }
 .hero .hero_flex span {
-  font-size: 22px;
+  font-size: 1.375rem;
   color: #E6DADA;
 }
 .hero .hero_flex .boton {
-  font-size: 22px;
+  font-size: 1.375rem;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -90,11 +121,11 @@ a {
 }
 .caja_ubicacion .icono-ubicacion {
   color: #ffc107;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 main {
-  width: 1200px;
+  width: 60rem;
   max-width: 100%;
   margin: 30px auto;
   padding: 20px 40px;
@@ -121,23 +152,36 @@ main .contenedor_contacto h2 {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 575.98px) {
+  .servicios {
+    display: block;
+  }
+}
 .servicios .cajaServicio {
   padding: 15px 10px;
   text-align: center;
   flex: 0 0 calc(33.3% - 10px);
 }
 .servicios .cajaServicio h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #0097a7;
   margin-bottom: 15px;
+}
+@media only screen and (min-width: 575.99px) {
+  .servicios .cajaServicio h3 {
+    height: 70px;
+  }
 }
 .servicios .cajaServicio .iconos {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   margin: 0 auto 10px auto;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -147,26 +191,26 @@ main .contenedor_contacto h2 {
   background-color: #ffc107;
 }
 .servicios .cajaServicio .iconos i {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .servicios .cajaServicio p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 2;
 }
 
 .contacto {
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   background-color: #808080;
   margin: 0 auto;
   width: 100%;
-  max-width: 800px;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  max-width: 50rem;
+  border-radius: 0.9375rem;
+  -webkit-border-radius: 0.9375rem;
+  -moz-border-radius: 0.9375rem;
+  -ms-border-radius: 0.9375rem;
+  -o-border-radius: 0.9375rem;
 }
 .contacto h3 {
   text-align: center;
@@ -180,17 +224,23 @@ main .contenedor_contacto h2 {
   margin: 20px 0;
 }
 .contacto .campo label {
-  font-size: 20px;
-  width: 100px;
+  font-size: 1.25rem;
+  width: 6.25rem;
   color: white;
 }
 .contacto .campo input, .contacto .campo textarea {
-  font-size: 16px;
-  height: 40px;
+  font-size: 1rem;
+  height: 2.5rem;
   flex: 1;
 }
+@media only screen and (max-width: 575.98px) {
+  .contacto .campo input, .contacto .campo textarea {
+    flex: 1;
+    width: 100%;
+  }
+}
 .contacto .campo textarea {
-  height: 80px;
+  height: 5rem;
 }
 .contacto .campo input[type=submit] {
   flex: 0;
@@ -201,13 +251,29 @@ main .contenedor_contacto h2 {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 767.99px) {
+  .contacto .campos_principales {
+    display: block;
+  }
+}
 .contacto .campos_principales .campo {
   margin: 0;
   flex: 0 0 calc(50% - 10px);
 }
+@media only screen and (max-width: 767.99px) {
+  .contacto .campos_principales .campo {
+    margin: 20px 0;
+  }
+}
 .contacto .contenedor_enviar {
   display: flex;
   justify-content: flex-end;
+}
+@media only screen and (max-width: 575.98px) {
+  .contacto .contenedor_enviar {
+    justify-content: center;
+    max-width: 100%;
+  }
 }
 .contacto .contenedor_enviar .campo {
   margin: 0;

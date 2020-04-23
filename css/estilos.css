@@ -48,9 +48,6 @@ a {
   background-color: white;
 }
 .header .header__flex {
-  display: flex;
-  justify-content: space-between;
-  height: 2.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -59,20 +56,81 @@ a {
     display: block;
     height: auto;
     text-align: center;
+    width: 100%;
   }
 }
-.header .header__flex .enlace {
-  text-transform: capitalize;
+
+.menu-responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: inherit;
+}
+@media only screen and (min-width: 575.99px) {
+  .menu-responsive {
+    overflow: visible;
+  }
+}
+.menu-responsive__contenedor-hamburguer {
+  width: 100%;
+}
+@media only screen and (min-width: 575.99px) {
+  .menu-responsive__contenedor-hamburguer {
+    height: inherit;
+  }
+}
+.menu-responsive__contenedor-hamburguer .menu-hamburguer {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+}
+@media only screen and (min-width: 575.99px) {
+  .menu-responsive__contenedor-hamburguer .menu-hamburguer {
+    display: none;
+  }
+}
+.menu-responsive__contenedor-hamburguer .menu-hamburguer .icon-hamburguer {
+  color: black;
+  font-size: 20px;
+}
+.menu-responsive__contenedor-hamburguer .enlaces {
+  max-height: 0px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+@media only screen and (min-width: 575.99px) {
+  .menu-responsive__contenedor-hamburguer .enlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: inherit;
+    width: 100%;
+  }
+}
+.menu-responsive__contenedor-hamburguer .enlaces .enlace {
+  color: black;
+  display: block;
+  padding: 20px;
+  text-transform: capitalize;
   color: black;
   font-size: 1.5rem;
 }
-@media only screen and (max-width: 575.98px) {
-  .header .header__flex .enlace {
-    padding: 8px;
-    justify-content: center;
+@media only screen and (min-width: 575.99px) {
+  .menu-responsive__contenedor-hamburguer .enlaces .enlace {
+    display: inline-block;
   }
+}
+.menu-responsive__contenedor-hamburguer .enlaces.mostrar-menu {
+  max-height: 500px;
 }
 
 .hero {

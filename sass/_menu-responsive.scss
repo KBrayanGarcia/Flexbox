@@ -1,0 +1,62 @@
+.menu-responsive{
+     display:flex;
+     flex-direction:column;
+     align-items: center;
+     text-align: center;
+     overflow: hidden;
+     width: 100%;
+     height: inherit;
+     @include media('desktop'){
+          overflow: visible;
+     }
+     &__contenedor-hamburguer{
+          width: 100%;
+          @include media('desktop'){
+               height: inherit;
+          }
+          .menu-hamburguer{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               margin: 0 auto;
+               width: 60px;
+               height: 60px;
+               @include media('desktop'){
+                    display: none;
+               }
+               .icon-hamburguer{
+                    color: black;
+                    font-size: 20px;
+               }
+          }
+          .enlaces{
+               max-height: 0px;
+               transition: 1s;
+               -webkit-transition: 1s;
+               -moz-transition: 1s;
+               -ms-transition: 1s;
+               -o-transition: 1s;
+               @include media('desktop'){
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    max-height: inherit;
+                    width: 100%;
+               }
+               .enlace{
+                    color: black;
+                    display: block;
+                    padding: 20px;
+                    text-transform: capitalize;
+                    color: $color_primario;
+                    font-size: 1.5rem;
+                    @include media('desktop'){
+                         display: inline-block;
+                    }
+               }
+          }
+          .enlaces.mostrar-menu{
+               max-height: 500px;
+          }
+     }
+}

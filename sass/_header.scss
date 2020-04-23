@@ -1,26 +1,14 @@
 .header{ 
      background-color: $color_claro; 
      .header__flex{
-          display: flex;
-          justify-content: space-between;
-          height: 2.5rem;
           width: 90%;
           margin: 0 auto;
           @include media('movil-s'){
                display: block;
                height: auto;
                text-align: center;
-          }
-          .enlace{
-               text-transform: capitalize;
-               display: flex;
-               align-items: center;
-               color: $color_primario;
-               font-size: 1.5rem;
-               @include media('movil-s'){
-                    padding: 8px;
-                    justify-content: center;
-               }
+               width: 100%;
           }
      }
 }
+@import 'menu-responsive.scss';
